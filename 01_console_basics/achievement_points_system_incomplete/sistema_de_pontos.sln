@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sistema_de_pontos", "sistema_de_pontos.csproj", "{020439AB-44AF-4ABC-A03F-D1A65930B447}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{020439AB-44AF-4ABC-A03F-D1A65930B447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{020439AB-44AF-4ABC-A03F-D1A65930B447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{020439AB-44AF-4ABC-A03F-D1A65930B447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{020439AB-44AF-4ABC-A03F-D1A65930B447}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA9ABD10-1B33-4526-BE60-F367B4CD1D72}
+	EndGlobalSection
+EndGlobal

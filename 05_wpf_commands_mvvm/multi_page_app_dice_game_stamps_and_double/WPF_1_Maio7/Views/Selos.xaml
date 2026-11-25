@@ -1,0 +1,36 @@
+﻿<Page x:Class="WPF_1_Maio7.Views.Selos"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_1_Maio7.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Background="Yellow"
+      Title="Selos">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="O Máquina dos Selos" TextAlignment="center" FontSize="33" Background="White" Grid.ColumnSpan="3" Padding="0 12"></TextBlock>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="3" Background="Orange">
+            <Label FontSize="23" HorizontalAlignment="center">INTRODUZA O VALOR</Label>
+            <TextBox Margin="12" FontSize="23" Name="textnum" HorizontalAlignment="center" Width="200"></TextBox>
+            <Label Content="" x:Name="resultado" FontSize="23" HorizontalAlignment="center"></Label>
+        </StackPanel>
+        <Button 
+            CommandParameter="{Binding Text, ElementName=textnum}"
+
+            Grid.Row="2" Background="Beige" Grid.Column="1" Content="click" FontSize="23" Margin="0 60" 
+                    Command="{Binding cmdSelos, Source={StaticResource controller}}"
+        ></Button>
+    </Grid>
+</Page>
